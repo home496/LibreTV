@@ -104,6 +104,7 @@ function initAPICheckboxes() {
         });
     });
     container.appendChild(normaldiv);
+    localStorage.setItem('selectedAPIs', JSON.stringify(selectedAPIs));
 
     // 添加成人API列表
     addAdultAPI();
