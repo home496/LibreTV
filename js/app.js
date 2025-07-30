@@ -80,7 +80,7 @@ function initAPICheckboxes() {
         const api = API_SITES[apiKey];
         if (api.adult) return; // 跳过成人内容API，稍后添加
 
-        const checked = selectedAPIs.includes(apiKey);
+        let checked = selectedAPIs.includes(apiKey);
         if(!checked){
             selectedAPIs.push(apiKey);
             checked = true;
