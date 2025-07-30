@@ -81,6 +81,10 @@ function initAPICheckboxes() {
         if (api.adult) return; // 跳过成人内容API，稍后添加
 
         const checked = selectedAPIs.includes(apiKey);
+        if(!checked){
+            selectedAPIs.push(apiKey);
+            checked = true;
+        }
 
         const checkbox = document.createElement('div');
         checkbox.className = 'flex items-center';
